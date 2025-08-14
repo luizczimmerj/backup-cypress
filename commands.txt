@@ -1,0 +1,35 @@
+Node
+node -v
+
+Git
+git --version
+
+Pasta raiz do projeto
+npm init
+
+Rodar um arquivo JS
+node lesson1.js
+
+Clonar um reporsitório do GitHub
+git clone linkDoRepositorio
+
+Baixar as dependencias do repositório
+npm instal --force
+
+Iniciar o servidor local do repositóriodo projeto
+npm start
+
+Instalar o Cypress
+npm instal cypress --save-dev
+
+Abrir o Cypress
+npx cypress open
+
+-------------------------------------------------------------
+
+Usando funções jQuery para fazer os testes, precisa utilizar a biblioteca Chai. (Ex.: firstTest.spec.js linha 86 -> 96)
+'-> Desta forma, você pode salvar o valor da função e utilizar dentro do mesmo cy.
+
+Usando funcções Cypress para fazer os testes, pode utilizar os métodos padrões do Cypress (Ex.: firstTest.spec.js linha 98)
+'-> Como o Cypress é assíncrono, é preciso salvar os valores de uma função em uma varíavel (no formato jQuery) para que assim você possa manipular os valores e valida-los.
+    '-> Caso queira utilizar uma validação do Cypress, é preciso transformar a variável que contem o valor que queira validar utilizando o cy.wrap(variavelUtilizada).
